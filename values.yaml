@@ -869,7 +869,7 @@ ingress-nginx:
 
       # loadBalancerIP: ""
       loadBalancerSourceRanges: []
-      servicePort: 80
+      servicePort: 82
       type: ClusterIP
 
     priorityClassName: ""
