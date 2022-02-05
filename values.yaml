@@ -38,8 +38,8 @@ ingress-nginx:
 
     # -- Configures the ports that the nginx-controller listens on
     containerPort:
-      http: 81
-      https: 444
+      http: 80
+      https: 443
 
     # -- Will add custom configuration options to Nginx https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/configmap/
     config: {}
@@ -91,7 +91,7 @@ ingress-nginx:
     ## Disabled by default
     hostPort:
       # -- Enable 'hostPort' or not
-      enabled: false
+      enabled: true
       ports:
         # -- 'hostPort' http port
         http: 80
